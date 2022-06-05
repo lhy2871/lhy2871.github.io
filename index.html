@@ -81,52 +81,12 @@
 </div>
 
 <footer class="pos-absolute filter footer">
-    Copyright &copy; 2022 <a href="//hanyuan6.wordpress.com/">Hanyuan</a> - Hanyuan. All rights reserved.
+    Copyright &copy; 2022 <a href="https://hanyuan6.wordpress.com/">Hanyuan</a> - Hanyuan. All rights reserved.
+    <a href="https://beian.miit.gov.cn/">京ICP备xxxxxxxx号</a>
 </footer>
 
 <script src="./statics/scripts/vue.js"></script>
 <script src="./statics/scripts/parallax.min.js"></script>
 <script src="./statics/scripts/fall.js"></script>
-<script>
-
-    const mori = document.getElementById('mori');
-    const parallaxInstance = new Parallax(mori);
-
-    /** @type {FallItem[]} */
-    const leaves = [];
-    for (let i = 1; i <= 5; i++) {
-        let path = `./statics/imgs/leaves/leaves${i}.svg`;
-        leaves.push(new FallItem(path, 1))
-    }
-
-    const leaves3 = document.getElementById("leaves3")
-    const fall3 = new Fall(leaves3, leaves, 15, 5)
-
-    const leaves2 = document.getElementById("leaves2")
-    const fall2 = new Fall(leaves2, leaves, 15, 5)
-
-    const leaves1 = document.getElementById("leaves1")
-    const fall1 = new Fall(leaves1, leaves, 15, 5)
-
-    PetiteVue.createApp({
-        inks: [
-            {
-                "size": "2.4vh",
-                "list": ["「倘若周围一片漆黑", "那就只能静待眼睛习惯黑暗」"]
-            },
-            {
-                "size": "2.4vh",
-                "list": ["「哪儿有人会喜欢孤独", "只是害怕失望罢了」"]
-            },
-            {
-                "size": "2.4vh",
-                "list": ["「我几次朝着夜幕伸出手去，指尖毫无所触", "那小小的光点总是同指尖保持着一点点不可触及的距离」"]
-            }
-        ],
-        index: 0,
-        vueIsLoaded: true,
-    }).mount();
-
-</script>
 </body>
 </html>
