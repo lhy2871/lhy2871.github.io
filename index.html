@@ -39,17 +39,6 @@
 
 <div class=" pos-absolute pos-all-0">
     <div class="body pos-relative">
-        <div class="pos-absolute pos-all-0 filter ink" v-scope>
-            <div class="content heti heti--vertical" v-if="!vueIsLoaded">
-                <p>「倘若周围一片漆黑</p>
-                <p>那就只能静待眼睛习惯黑暗」</p>
-            </div>
-            <div class="content heti heti--vertical hide" v-bind:style="{display: vueIsLoaded ? 'block' : 'none'}">
-                <p v-for="ink in inks" class="" v-bind:style="{fontSize: ink.size}">
-                    <span v-for="str in ink.list" style="display: block">{{ str }}</span>
-                </p>
-            </div>
-        </div>
         <div data-depth="0" class="pos-absolute pos-all-0 me">
             <div class="content filter full-size">
                 <div class="full-size no-filter">
@@ -81,7 +70,8 @@
 </div>
 
 <footer class="pos-absolute filter footer">
-    Copyright &copy; 2022 <a href="//hanyuan6.wordpress.com/">Hanyuan</a> - Hanyuan. All rights reserved.
+    Copyright &copy; 2022 <a href="https://hanyuan6.wordpress.com/">Hanyuan</a> - Hanyuan. All rights reserved.
+    <a href="https://beian.miit.gov.cn/">京ICP备xxxxxxxx号</a>
 </footer>
 
 <script src="./statics/scripts/vue.js"></script>
@@ -107,25 +97,6 @@
 
     const leaves1 = document.getElementById("leaves1")
     const fall1 = new Fall(leaves1, leaves, 15, 5)
-
-    PetiteVue.createApp({
-        inks: [
-            {
-                "size": "2.4vh",
-                "list": ["「倘若周围一片漆黑", "那就只能静待眼睛习惯黑暗」"]
-            },
-            {
-                "size": "2.4vh",
-                "list": ["「哪儿有人会喜欢孤独", "只是害怕失望罢了」"]
-            },
-            {
-                "size": "2.4vh",
-                "list": ["「我几次朝着夜幕伸出手去，指尖毫无所触", "那小小的光点总是同指尖保持着一点点不可触及的距离」"]
-            }
-        ],
-        index: 0,
-        vueIsLoaded: true,
-    }).mount();
 
 </script>
 </body>
