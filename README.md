@@ -1,5 +1,5 @@
 # 个人主页
-fork from [![Website](https://github.com/dmego/home.github.io)](dmego@github)
+fork from [![Website](https://github.com/dmego/home.github.io)](dmego)
 
 [![Website](https://img.shields.io/website-up-down-green-red/http/i.dmego.cn.svg)](http://i.dmego.cn/)
 [![License](https://img.shields.io/github/license/dmego/home.github.io.svg)](/LICENSE)
